@@ -1,0 +1,31 @@
+# "Ember Deep" — a base16 scheme built from your refined palette.
+# Navy base family, teal-slate surfaces, rust accent (capped at #c14a1f),
+# maroon + forest as rare secondary tints, warm off-white foreground.
+#
+# base00-07 = greyscale-ish ramp (bg -> fg). base08-0F = accent hues.
+# Stylix consumes this via base16Scheme in modules/desktop/stylix.nix.
+
+system: "base16"
+name: "Ember Deep"
+author: "you"
+variant: "dark"
+
+# --- backgrounds -> foregrounds (dark to light) ---
+base00: "10141f"  # base bg (near-black navy)          — page background
+base01: "161c2b"  # lighter bg                          — panels, status bar
+base02: "243b40"  # selection bg / surface (teal-slate) — selections, borders
+base03: "3f4f7a"  # comments / muted                    — subtle text, hovers
+base04: "9aa3b8"  # dark foreground                     — secondary text
+base05: "e5e9f2"  # default foreground                  — body text (cool)
+base06: "f0ece2"  # light foreground (warm off-white)   — bright text/headers
+base07: "ffffff"  # brightest
+
+# --- accents ---
+base08: "c14a1f"  # red/rust  — PRIMARY ACCENT (active ws, focus, errors)
+base09: "8b2408"  # orange    — deep rust (mid accent, warnings)
+base0A: "e6c384"  # yellow    — warm sand (kept legible; warnings/highlights)
+base0B: "2f7a4f"  # green     — brightened forest (success, git-add)
+base0C: "4e8790"  # cyan/teal — surface accent (info, secondary highlight)
+base0D: "3f4f7a"  # blue      — navy-lifted (functions, links, secondary)
+base0E: "7a2531"  # magenta   — maroon-lifted (rare tint, keywords)
+base0F: "5a1705"  # brown     — deep shadow rust (pressed states)
