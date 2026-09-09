@@ -13,8 +13,8 @@
     ./programs/notifications.nix
     ./programs/wallpaper.nix
     ./programs/powermenu.nix
-    ./programs/widgets.nix
-    ./programs/menus.nix
+ #   ./programs/widgets.nix
+ #   ./programs/menus.nix
   ];
 
   

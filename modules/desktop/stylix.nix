@@ -29,12 +29,5 @@
       name = "Bibata-Modern-Ice";
       size = 24;
     };
-
-    # Let our hand-tuned configs win for the components we design ourselves.
-    targets = {
-      hyprland.enable = false;   # we set borders/anim manually via tokens
-      waybar.enable = false;     # custom CSS below
-      rofi.enable = false;       # custom theme in home/
-    };
   };
 }
