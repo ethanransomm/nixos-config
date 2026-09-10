@@ -1,0 +1,11 @@
+[SddmGreeterTheme]
+Name=Ember Deep
+Description=Bespoke greeter matching the Ember Deep desktop theme
+Author=ethan
+Type=sddm-theme
+Version=1.0
+MainScript=Main.qml
+ConfigFile=theme.conf
+Theme-Id=ember-deep
+Theme-API=2.0
+QtVersion=6

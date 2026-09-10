@@ -70,6 +70,13 @@ rec {
   font = {
     mono = "JetBrainsMono Nerd Font";
     sans = "Inter";
+    # Dedicated icon-only font, same one Quickshell's own Theme.qml uses
+    # (Theme.font.icon) — JetBrainsMono Nerd Font's patched PUA glyphs for
+    # some codepoints (0xf021 refresh, 0xf011 power confirmed) are a
+    # different, uglier design than what Symbols Nerd Font ships at the same
+    # codepoints. Anything rendering a Nerd Font icon glyph (not mixed with
+    # real text in the same string) should use this, not `mono`.
+    icon = "Symbols Nerd Font";
     sizeBar = 13;
     sizeUi = 11;
   };
