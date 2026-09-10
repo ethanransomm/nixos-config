@@ -25,8 +25,10 @@
 
   programs.git = {
     enable = true;
-    userName = "Your Name";       # CHANGE
-    userEmail = "you@example.com"; # CHANGE
+    settings.user = {
+      name = "Your Name";        # CHANGE
+      email = "you@example.com"; # CHANGE
+    };
   };
 
   # Docker daemon is enabled system-side; add this to configuration.nix:

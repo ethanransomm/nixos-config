@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 let t = import ../../theme/tokens.nix;
 in
@@ -49,6 +49,6 @@ in
   programs.eza.enable = true;
   programs.bat = {
     enable = true;
-    config.theme = "base16";
+    config.theme = lib.mkForce "base16";
   };
 }

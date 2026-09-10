@@ -16,4 +16,7 @@
   # If Windows has Secure Boot on, you'll likely need to disable it in BIOS
   # for NixOS to boot — OR set up Lanzaboote later to sign your boot files.
   # Start with Secure Boot off to get a working system, revisit later.
+  # Keyboard layout lives in hosts/laptop/configuration.nix — don't duplicate
+  # it here (it was previously set in both places, under the old renamed
+  # xserver.layout/xkbVariant option names).
 }

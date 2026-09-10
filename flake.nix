@@ -9,19 +9,17 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # Hyprland from the flake — REQUIRED for hyprexpo, because the plugin must
-    # be built against the exact same Hyprland version. Set up Cachix (see the
-    # main README) so this doesn't recompile Hyprland on every update.
+    # Hyprland from the flake — REQUIRED for hyprexpo
     hyprland.url = "github:hyprwm/Hyprland";
 
-    # Official plugins (contains hyprexpo — the window overview grid).
-    # It follows the hyprland input above so versions stay locked together.
+    # Official plugins (contains hyprexpo)
     hyprland-plugins = {
       url = "github:hyprwm/hyprland-plugins";
       inputs.hyprland.follows = "hyprland";
     };
 
     stylix.url = "github:nix-community/stylix";
+
   };
 
   outputs = { self, nixpkgs, home-manager, hyprland, hyprland-plugins, stylix, ... }@inputs:
@@ -41,6 +39,7 @@
           home-manager.useUserPackages = true;
           home-manager.extraSpecialArgs = { inherit inputs; };
           home-manager.users.ethan = import ./home/home.nix;
+          home-manager.backupFileExtension = "hmbak";
         }
       ];
     };
