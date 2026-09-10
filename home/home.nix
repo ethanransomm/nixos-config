@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ./programs/hyprland.nix
+    ./programs/hyprland-wm.nix
     ./programs/waybar.nix
     ./programs/kitty.nix
     ./programs/shell.nix
@@ -17,7 +17,7 @@
  #   ./programs/menus.nix
   ];
 
-  
+
   home.username = "ethan";
   home.homeDirectory = "/home/ethan";
 
