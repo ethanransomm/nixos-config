@@ -3,7 +3,6 @@
 {
   imports = [
     ./programs/hyprland-wm.nix
-    ./programs/waybar.nix
     ./programs/kitty.nix
     ./programs/shell.nix
     ./programs/dev.nix
@@ -13,10 +12,15 @@
     ./programs/notifications.nix
     ./programs/wallpaper.nix
     ./programs/powermenu.nix
- #   ./programs/widgets.nix
- #   ./programs/menus.nix
+    ./programs/quickshell.nix
   ];
 
+  stylix.targets = {
+    rofi.enable = true;
+    kitty.enable = true;
+    hyprlock.enable = true;
+    hyprland.enable = true;
+  };
 
   home.username = "ethan";
   home.homeDirectory = "/home/ethan";
@@ -28,8 +32,10 @@
     grim slurp
     brightnessctl
     curl                # weather module
-    blueman             # bluetooth manager (waybar click)
+    libnotify           # notify-send — screenshot confirmation, etc.
+    blueman             # full bluetooth manager — pairing wizard the bar panel doesn't cover
     playerctl           # mpris media control
+    kdePackages.dolphin
   ];
 
   programs.home-manager.enable = true;

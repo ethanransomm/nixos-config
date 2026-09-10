@@ -1,0 +1,7 @@
+module Theme
+singleton Theme 1.0 Theme.qml
+singleton Icons 1.0 Icons.qml
+singleton PanelState 1.0 PanelState.qml
+singleton NotifStore 1.0 NotifStore.qml
+singleton SystemStats 1.0 SystemStats.qml
+singleton WeatherStore 1.0 WeatherStore.qml
