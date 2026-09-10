@@ -11,8 +11,9 @@
     base16Scheme = ../../theme/ember-deep.yaml;
     polarity = "dark";
 
-    # A wallpaper that matches the scheme (drop your file here). Stylix uses it
-    # for the desktop + lockscreen base. swww handles the animated layer.
+    # A wallpaper that matches the scheme (drop your file here). Stylix uses
+    # it to derive the colour scheme; hyprpaper (home/programs/wallpaper.nix)
+    # displays this same file as the actual desktop background.
     image = ../../home/wallpapers/wallpaper.jpg;
 
     fonts = {
